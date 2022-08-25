@@ -2,19 +2,19 @@ version: '3'
 
 services:
 
-  issuer:
+  discoverissuer:
     platform: linux/x86_64
     restart: always
-    container_name: issuer
-    image: issuer
+    container_name: discoverissuer
+    image: discoverissuer
     build:
       context: .
     ports:
       - "3000:3000"
     volumes:
-      - ./code/src:/root/issuer/src
+      - ./code/src:/root/discoverissuer/src
     networks:
-      - issuer_network
+      - discoverissuer_network
 
 networks:
-  issuer_network:
+  discoverissuer_network:
