@@ -33,3 +33,4 @@ __pycache__
 node_modules
 qrcode.png
 **/ios/Pods
+/bin/
